@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <ws-card></ws-card>
+    <ws-update></ws-update>
   </div>
 </template>
 
