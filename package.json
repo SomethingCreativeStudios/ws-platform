@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "vue-cli-service lint",
+    "inspect": "vue-cli-service inspect > output.js",
     "build": "vue-cli-service electron:build",
     "serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
