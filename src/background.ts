@@ -10,7 +10,7 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 // keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win: BrowserWindow | null;
-
+app.commandLine.appendSwitch('disable-features', 'OutOfBlinkCors');
 // scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
   { scheme: "app", privileges: { secure: true, standard: true } },
@@ -23,6 +23,7 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
+      webSecurity: false,
     },
   });
 

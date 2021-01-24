@@ -7,11 +7,12 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import {mainFunc} from "ws-card-updater";
 
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
-  created() {}
+  created() {mainFunc()}
 }
 </script>
 
