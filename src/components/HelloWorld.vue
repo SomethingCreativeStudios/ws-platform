@@ -1,12 +1,11 @@
 <template>
   <div class="hello">
-    <ws-card></ws-card>
-    <ws-update></ws-update>
+    <ws-deck-search> </ws-deck-search>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {

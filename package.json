@@ -13,12 +13,13 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.3.2",
+    "node-fetch": "^2.6.1",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.3.0",
     "vuex": "^3.0.1",
-    "ws-battleground": "file:./../ws-battleground",
-    "ws-card-updater": "file:./../ws-card-updater"
+    "ws-card-updater": "file:./../ws-card-updater",
+    "ws-deck-builder": "file:./../ws-deck-builder"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
