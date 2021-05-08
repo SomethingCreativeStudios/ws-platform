@@ -1,7 +1,5 @@
 <template>
-  <div>HELLO I AM A TEST?</div>
-  {{ data }}ss
-  <ws-card></ws-card>
+  <ws-deck-builder></ws-deck-builder>
 </template>
 
 <script lang="ts">
