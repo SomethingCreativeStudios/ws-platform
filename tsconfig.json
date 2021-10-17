@@ -1,25 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "react",
-    "esModuleInterop": true,
+    "target": "esnext",
     "sourceMap": true,
-    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
     "strict": true,
+    "isolatedModules": true,
     "types": [
-      "vite/client",
       "node"
     ],
-    "paths": {
-      "~/*": ["src/render/*", "src/main/*"],
-      "root/*": ["/*"]
-    },
-    "allowSyntheticDefaultImports": true
+    "typeRoots": [
+      "node_modules/@types",
+    ],
+    "lib": ["ESNext"]
   },
-  "include": [
-    "src/**/*"
-  ]
 }
