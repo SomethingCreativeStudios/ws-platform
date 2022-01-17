@@ -1,13 +1,9 @@
-import {createApp} from 'vue';
+import { createApp } from 'vue';
 import App from '~/App.vue';
 import router from '~/router';
 
-import WsDeckBuilder from '@ws/deck-builder';
+import { WsDeckBuilder } from '@ws/deck-builder';
+import '@ws/deck-builder/dist/style.css';
 
-import '@ws/deck-builder/public/style.css';
-
-
-createApp(App)
-  .use(router)
-  .use(WsDeckBuilder)
-  .mount('#app');
+console.log(WsDeckBuilder);
+createApp(App).use(router).use(WsDeckBuilder).mount('#app');
